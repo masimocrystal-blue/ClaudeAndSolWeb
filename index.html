@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude &amp; Soil — Grown with Attention</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#">Claude &amp; Soil</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#flagship">Claude's Red</a></li>
+        <li><a href="#catalogue">Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+      </ul>
+      <button class="cart-toggle" id="cart-toggle" aria-label="Open cart">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M2 2h2l2.4 9.6a2 2 0 0 0 1.9 1.4h7.4a2 2 0 0 0 1.9-1.4L20 6H6"/>
+          <circle cx="9" cy="18" r="1"/>
+          <circle cx="16" cy="18" r="1"/>
+        </svg>
+        <span class="cart-badge" id="cart-badge">0</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-image-wrap">
+      <img
+        src="assets/hero-group/hero-main.jpg"
+        alt="Claude &amp; Soil — fields and harvest"
+        class="hero-img"
+        onerror="this.classList.add('img-missing')"
+      >
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-label">Est. 2038 &nbsp;·&nbsp; Eastern Growing Corridor</p>
+      <h1 class="hero-title">Claude &amp; Soil</h1>
+      <p class="hero-tagline">Grown with attention.</p>
+      <p class="hero-sub">Small-scale. Data-assisted. Quietly honest about what we make and why.</p>
+      <div class="hero-actions">
+        <a href="#flagship" class="btn btn-light">Our Flagship</a>
+        <a href="#catalogue" class="btn btn-outline-light">All Products</a>
+      </div>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Scroll down">
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <rect x="1" y="1" width="14" height="22" rx="7"/>
+        <line x1="8" y1="7" x2="8" y2="11"/>
+      </svg>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-image-wrap">
+        <img
+          src="assets/hero-group/hero-story.jpg"
+          alt="The growing fields behind Claude &amp; Soil"
+          onerror="this.classList.add('img-missing')"
+        >
+      </div>
+      <div class="about-text">
+        <span class="section-label">About</span>
+        <h2 class="section-heading">Grown where<br>attention matters.</h2>
+        <p>Claude &amp; Soil began in 2038 with a question we couldn't stop asking: does anyone actually know where their food was grown, and whether the person who made it paused to think about whether you'd eaten today?</p>
+        <p>We are not a large company. We grow in the Eastern Corridor using data-assisted cultivation — not to optimise for yield, but to understand what the soil is telling us. Our AI systems are observational tools, not production drivers. The decisions are still made by people who know the land.</p>
+        <p>Attention, for us, has two meanings. The careful kind: precise, data-informed, exacting in quality. And the human kind: the moment before a meal when you wonder whether someone is fed tonight. Both matter to us equally.</p>
+        <div class="about-detail">
+          <div class="about-stat">
+            <span class="stat-number">2038</span>
+            <span class="stat-label">Founded</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-number">1</span>
+            <span class="stat-label">Growing corridor</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-number">5</span>
+            <span class="stat-label">Product lines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FLAGSHIP: CLAUDE'S RED ===================== -->
+  <section class="flagship" id="flagship">
+    <div class="flagship-inner">
+      <div class="flagship-text">
+        <span class="section-label section-label--light">Flagship Product</span>
+        <h2 class="flagship-heading">Claude's<br><em>Red.</em></h2>
+        <p class="flagship-sub">The sauce that started everything.</p>
+        <p>In the winter of 2039, after an unexpected harvest surplus of a single heritage tomato variety, we cooked down the excess into a slow sauce with no plan to sell it. A neighbour asked where to buy it. Then another. That was Claude's Red.</p>
+        <p>It is a simple product. One variety of tomato, grown in volcanic soil, cooked low and slow. No additives. No scaling tricks. Every jar is made in the same way it was the first time.</p>
+        <div class="flagship-actions">
+          <button class="btn btn-terracotta" onclick="openProductById('claudes-red')">View Product</button>
+          <a href="#catalogue" class="btn btn-outline-dark">See All Sauces</a>
+        </div>
+      </div>
+      <div class="flagship-image-wrap">
+        <div class="flagship-image-frame">
+          <img
+            src="assets/plated/claudes-red-plated.jpg"
+            alt="Claude's Red tomato sauce, plated"
+            onerror="this.classList.add('img-missing')"
+          >
+        </div>
+        <div class="flagship-pkg-float">
+          <img
+            src="assets/package-design/claudes-red.jpg"
+            alt="Claude's Red — package"
+            onerror="this.classList.add('img-missing')"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATALOGUE ===================== -->
+  <section class="catalogue" id="catalogue">
+    <div class="catalogue-inner">
+      <div class="catalogue-header">
+        <span class="section-label">Products</span>
+        <h2 class="section-heading">Everything we make.</h2>
+        <p class="catalogue-intro">Each product comes from the same question: if we made this only for people we knew, would we be proud to give it to them?</p>
+      </div>
+
+      <!-- Category tabs — filled by JS -->
+      <div class="cat-tabs" id="cat-tabs" role="tablist"></div>
+
+      <!-- Product grid — filled by JS -->
+      <div class="cat-grid" id="cat-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <span class="section-label">Gallery</span>
+      <h2 class="section-heading">From field to table.</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--wide">
+        <img src="assets/plated/gallery-1.jpg" alt="Claude &amp; Soil — plated" onerror="this.classList.add('img-missing')">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/plated/gallery-2.jpg" alt="Claude &amp; Soil — plated" onerror="this.classList.add('img-missing')">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/hero-group/hero-gallery-1.jpg" alt="Claude &amp; Soil — field" onerror="this.classList.add('img-missing')">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/plated/gallery-3.jpg" alt="Claude &amp; Soil — plated" onerror="this.classList.add('img-missing')">
+      </div>
+      <div class="gallery-item gallery-item--tall">
+        <img src="assets/hero-group/hero-gallery-2.jpg" alt="Claude &amp; Soil — field" onerror="this.classList.add('img-missing')">
+      </div>
+      <div class="gallery-item">
+        <img src="assets/plated/gallery-4.jpg" alt="Claude &amp; Soil — plated" onerror="this.classList.add('img-missing')">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Claude &amp; Soil</p>
+        <p class="footer-tagline">Grown with attention.</p>
+        <p class="footer-copy">Eastern Growing Corridor · Est. 2038</p>
+      </div>
+      <div class="footer-links">
+        <p class="footer-links-head">Navigation</p>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#flagship">Claude's Red</a></li>
+          <li><a href="#catalogue">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-fiction">
+        <p class="footer-fiction-label">Fictional Brand Notice</p>
+        <p>Claude &amp; Soil is a fictional brand created for creative and worldbuilding purposes. This website, its products, prices, and all associated content are entirely fictional. No real purchase, order, or transaction is possible here. No data is collected or transmitted.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2046 Claude &amp; Soil — A fictional company. All products and stories are invented.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== CART SIDEBAR ===================== -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your Selection</h3>
+      <button class="cart-close" id="cart-close" aria-label="Close cart">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+          <line x1="2" y1="2" x2="14" y2="14"/><line x1="14" y1="2" x2="2" y2="14"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <p class="cart-empty">Nothing added yet.</p>
+    </div>
+    <div class="cart-foot">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">¥0</span>
+      </div>
+      <button class="btn btn-terracotta btn-full" id="checkout-btn">Proceed to Checkout</button>
+      <p class="cart-note">This is a fictional cart. No real order will be placed.</p>
+    </div>
+  </aside>
+
+  <!-- ===================== PRODUCT MODAL ===================== -->
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="modal product-modal" id="product-modal" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+        <line x1="2" y1="2" x2="14" y2="14"/><line x1="14" y1="2" x2="2" y2="14"/>
+      </svg>
+    </button>
+    <div class="modal-body" id="modal-body">
+      <!-- Filled by JS when a product is opened -->
+    </div>
+  </div>
+
+  <!-- ===================== FICTION NOTICE MODAL ===================== -->
+  <div class="fiction-modal-overlay" id="fiction-modal-overlay"></div>
+  <div class="fiction-modal" id="fiction-modal" role="dialog" aria-modal="true">
+    <div class="fiction-modal-inner">
+      <span class="section-label">Notice</span>
+      <h3>This is not a real shop.</h3>
+      <p>Claude &amp; Soil is a fictional brand created for creative and worldbuilding purposes. No checkout, payment, or delivery system exists. Your cart is for visual demonstration only.</p>
+      <button class="btn btn-terracotta" id="fiction-modal-close">Understood</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
