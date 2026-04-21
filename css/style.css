@@ -116,6 +116,13 @@ h1, h2, h3, h4 {
 }
 .btn-outline-light:hover { background: rgba(255,255,255,0.1); border-color: var(--white); }
 
+.flagship-actions .btn-outline-light {
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-terracotta {
   background: var(--terracotta);
   color: var(--white);
@@ -402,7 +409,7 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(3rem, 6vw, 6rem);
-  align-items: center;
+  align-items: start;
 }
 
 .flagship-text { color: var(--white); }
